@@ -1,0 +1,50 @@
+.address {
+    float: right;
+    width: 39%;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;}
+
+.address-icon i {
+     background: #CE1B28 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #fff;
+    float: left;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.address-content h3 {
+    font-size: 20px;
+    color: #002E5B;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+p {
+    color: #7e7e7e;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #002E5B;
+    margin-top: 0px;
+    font-style: normal;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+}

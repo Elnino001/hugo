@@ -1,0 +1,256 @@
+.slider{
+    display: relative;
+    width: 100%;
+    background: #2c3e50;
+    height: 100vh;
+}
+
+.myslider{
+    height: 655px;
+    display: none;
+    overflow: hidden;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.prev:hover, .next:hover{
+    color: #fff;
+    background: red;
+
+}
+
+.next{
+    right: 0;
+}
+
+.dotsbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active, .dot:hover{
+    border-color: red;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{opacity: 0.0;}
+    from{opacity: 1;}
+
+}
+
+@keyframes fade{
+    from{opacity: 0.0;}
+    from{opacity: 1;}
+
+}
+
+.txt{
+    position: absolute;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: post;
+    -webkit-animation-duration: 2s;
+    animation-name: post;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+@-webkit-keyframes post{
+    from {left: 25%;}
+    to {left: 15%;}
+}
+
+@keyframes post{
+    from {left: 25%;}
+    to {left: 15%;}
+}
+
+.txt h1{
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.txt p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hello{
+    background: rgba(70, 72, 82, 1);
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+.mar{
+    margin-top: 130px;
+}
+
+.txt a.btn{
+    margin: 30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first{
+    background-color: red;
+    color: #fff;
+}
+a.btn-second{
+    background-color: navy;
+    color: #fff;
+    border: 1px solid darkorange;
+}
+a.btn-first:hover{
+    background-color: navy;
+    color: #fff;
+    border: 1px solid darkorange;
+    transition: 0.3s;
+}
+a.btn-second:hover{
+    background-color: red;
+    color: #fff;
+    border: 1px solid darkorange;
+    transition: 0.3s;
+}
+
+@-webkit-keyframes zoomin{
+    from {transform: scale(1,1);}
+    to {transform: scale(1.5, 1.5);}
+}
+
+@keyframes zoomin{
+    from {transform: scale(1,1);}
+    to {transform: scale(1.5, 1.5);}
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center p{
+    font-size: 14px;
+    color: #7e7e7e;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.mt{
+    margin-top: 70px;
+}
+
+.about-top-left>img {
+    border: 1px solid #f1f1f1;
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.about-top-text span {
+    color: #CE1B28;
+}
+
+.about-top-text>h1 {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-top-text>p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #7e7e7e;
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+
+
+@media screen and (max-width:800px){
+    .myslider{
+        height: 500px;
+    }
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: post2;
+        -webkit-animation-duration: 2s;
+        animation-name: post2;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes post2{
+        from {top: 35%;}
+        to {top: 50%;}
+    }
+    @keyframes post2{
+        from {top: 35%;}
+        to {top: 50%;}
+    }
+    .txt h1{
+        font-size: 40px;
+    }
+    .txt p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px){
+h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.mar{
+    margin-top: 100px;
+}
+.mt{
+    margin-top: 40px;
+}
+}
+@media screen and (max-width:520px){
+    .txt h1{
+        font-size: 30px;
+    }
+}
