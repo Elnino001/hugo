@@ -1,6 +1,7 @@
 .slider{
     display: relative;
     width: 100%;
+    overflow: hidden;
     background: #2c3e50;
     height: 100vh;
 }
@@ -81,7 +82,7 @@
     letter-spacing: 2px;
     line-height: 35px;
     top: 40%;
-    left: 15%;
+    left: 10%;
     -webkit-animation-name: post;
     -webkit-animation-duration: 2s;
     animation-name: post;
@@ -216,12 +217,15 @@ a.btn-second:hover{
         line-height: 25px;
         top: 50%;
         left: 50%;
-        margin-top: 40px;
+        margin-top: 100px;
         transform: translate(-50%, -50%);
         -webkit-animation-name: post2;
         -webkit-animation-duration: 2s;
         animation-name: post2;
         animation-duration: 2s;
+    }
+    .mt{
+        margin-top: 30px;
     }
     @-webkit-keyframes post2{
         from {top: 35%;}
@@ -232,14 +236,18 @@ a.btn-second:hover{
         to {top: 50%;}
     }
     .txt h1{
-        font-size: 40px;
+        font-size: 30px;
+        color: #fff;
+        margin-top: 30px;
+        font-weight: 900;
     }
+    
     .txt p{
         font-size: 13px;
     }
 }
 
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
 h2 {
     font-size: 25px;
     letter-spacing: 1px;
@@ -248,20 +256,14 @@ h2 {
 .txt{
     line-height: 25px;
     top: 50%;
-    left: 50%;
-    margin-top: 200px;
+    left: 40%;
+    margin-top: 100px;
     transform: translate(-50%, -50%);
-    -webkit-animation-name: none;
+    -webkit-animation-name: post2;
     -webkit-animation-duration: 2s;
-    animation-name: none;
+    animation-name: post2;
     animation-duration: 2s;
     display: inline;
-}
-.txt .btn{
-    display: inline;
-}
-.prev, .next{
-    margin-top: 200px;
 }
 
 @-webkit-keyframes post2{
@@ -272,17 +274,34 @@ h2 {
     from {top: 35%;}
     to {top: 50%;}
 }
+.txt .btn{
+    display: inline;
+}
+.prev, .next{
+    margin-top: 200px;
+    font-size: larger;
+    color: #2c3e50;
+    
+}
 
 .mt{
     margin-top: 30px;
 }
 }
 
-@media screen and (max-width:678px){
-    .txt h1{
-        font-size: 20px;
+@media screen and (max-width: 680px){
+    .myslider img{
+        width: 100%;
+        overflow: hidden;
     }
+
 }
+
+/* @media screen and (max-width:678px){
+    .txt h1{
+        font-size: 30px;
+    }
+} */
 @media screen and (max-width:520px){
     .txt h1{
         font-size: 30px;

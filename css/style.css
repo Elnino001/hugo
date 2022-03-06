@@ -29,11 +29,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     background: #002E5B none repeat scroll 0 0;
     border-bottom: 3px solid #CE1B28;
     width: 100%;
+    overflow: hidden;
 }
 
-.container {
+/* .container {
     width: 1200px;
-}
+} */
 
 .header-top-left {
     margin: 8px 0 10px;
@@ -303,7 +304,7 @@ nav .navbar .nav-links .links li:hover .js-sub-menu{
         display: block;
     }
     .nav-links .sidebar-logo .logo_name{
-        width: 10px;
+        max-width: 10px;
         
 
     }
@@ -360,28 +361,32 @@ nav .navbar .nav-links .links li:hover .js-sub-menu{
 }
 @media screen and (max-width:800px){
     .header-top {
-        padding: 5px 0;
+        padding: 3px 0;
         text-align: center;
-        width: 100%;
         font-size: large;
     }
     }
 
-@media screen and (max-width: 663px){
 
-.header-top {
-    width: 100%;
-    font-size: 30px;
-}}
-
-@media screen and (max-width: 629px){
+@media screen and (max-width: 680px){
 
     .header-top {
-        padding: 5px 0;
-        width: fit-content;
-        text-align: center;
-        font-size: 30px;
+        padding: 2px 0;
+        width: 100%;
+        overflow: hidden;
     }}
+
+/* @media screen and (max-width: 685px){
+
+.header-top {
+    max-width: auto;
+    display: none;
+    
+}
+
+} */
+
+
     
 
 
