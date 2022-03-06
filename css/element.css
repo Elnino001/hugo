@@ -102,7 +102,7 @@
 .txt h1{
     color: red;
     font-weight: bold;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .txt p{
@@ -110,13 +110,23 @@
     font-size: 20px;
 }
 
-.hello{
+.txt img{
     background: rgba(70, 72, 82, 1);
     transform: scale(1.5, 1.5);
     -webkit-animation-name: zoomin;
     -webkit-animation-duration: 40s;
     animation-name: zoomin;
     animation-duration: 40s;
+} 
+
+@-webkit-keyframes zoomin{
+    from {transform: scale(1,1);}
+    to {transform: scale(1.5, 1.5);}
+}
+
+@keyframes zoomin{
+    from {transform: scale(1,1);}
+    to {transform: scale(1.5, 1.5);}
 }
 .mar{
     margin-top: 130px;
@@ -150,15 +160,6 @@ a.btn-second:hover{
     transition: 0.3s;
 }
 
-@-webkit-keyframes zoomin{
-    from {transform: scale(1,1);}
-    to {transform: scale(1.5, 1.5);}
-}
-
-@keyframes zoomin{
-    from {transform: scale(1,1);}
-    to {transform: scale(1.5, 1.5);}
-}
 
 .text-center{
     text-align: center;
@@ -215,6 +216,7 @@ a.btn-second:hover{
         line-height: 25px;
         top: 50%;
         left: 50%;
+        margin-top: 40px;
         transform: translate(-50%, -50%);
         -webkit-animation-name: post2;
         -webkit-animation-duration: 2s;
@@ -237,20 +239,54 @@ a.btn-second:hover{
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 700px){
 h2 {
     font-size: 25px;
     letter-spacing: 1px;
 }
-.mar{
-    margin-top: 100px;
+
+.txt{
+    line-height: 25px;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    transform: translate(-50%, -50%);
+    -webkit-animation-name: none;
+    -webkit-animation-duration: 2s;
+    animation-name: none;
+    animation-duration: 2s;
+    display: inline;
 }
+.txt .btn{
+    display: inline;
+}
+.prev, .next{
+    margin-top: 200px;
+}
+
+@-webkit-keyframes post2{
+    from {top: 35%;}
+    to {top: 50%;}
+}
+@keyframes post2{
+    from {top: 35%;}
+    to {top: 50%;}
+}
+
 .mt{
-    margin-top: 40px;
+    margin-top: 30px;
 }
+}
+
+@media screen and (max-width:678px){
+    .txt h1{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:520px){
     .txt h1{
         font-size: 30px;
     }
 }
+
+
