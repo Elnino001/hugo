@@ -34,6 +34,7 @@
     right: 0;
 }
 
+
 .dotsbox{
     position: absolute;
     left: 50%;
@@ -111,7 +112,8 @@
     font-size: 20px;
 }
 
-.txt img{
+.hello{
+    max-width: 100%;
     background: rgba(70, 72, 82, 1);
     transform: scale(1.5, 1.5);
     -webkit-animation-name: zoomin;
@@ -210,6 +212,9 @@ a.btn-second:hover{
 
 
 @media screen and (max-width:800px){
+    *{
+        max-width: 100%;
+    }
     .myslider{
         height: 500px;
     }
@@ -217,12 +222,15 @@ a.btn-second:hover{
         line-height: 25px;
         top: 50%;
         left: 50%;
-        margin-top: 100px;
+        margin-top: 200px;
         transform: translate(-50%, -50%);
         -webkit-animation-name: post2;
         -webkit-animation-duration: 2s;
         animation-name: post2;
         animation-duration: 2s;
+    }
+    .about{
+        margin-top: 0;
     }
     .mt{
         margin-top: 30px;
@@ -236,34 +244,53 @@ a.btn-second:hover{
         to {top: 50%;}
     }
     .txt h1{
-        font-size: 30px;
         color: #fff;
         margin-top: 30px;
         font-weight: 900;
+        font-size: 27px;
+        letter-spacing: 1px;
     }
     
     .txt p{
         font-size: 13px;
     }
+
+    .prev, .next{
+        margin-top: 200px;
+        font-size: larger;
+        color: red;
+        
+    }
+    .txt h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .dotsbox{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px){
-h2 {
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-
-.txt{
-    line-height: 25px;
-    top: 50%;
-    left: 40%;
-    margin-top: 100px;
-    transform: translate(-50%, -50%);
-    -webkit-animation-name: post2;
-    -webkit-animation-duration: 2s;
-    animation-name: post2;
-    animation-duration: 2s;
-    display: inline;
+    *{
+        max-width: 100%;
+    }
+    .about{
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 25px;
+        letter-spacing: 1px;}
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 40%;
+        margin-top: 100px;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: post2;
+        -webkit-animation-duration: 2s;
+        animation-name: post2;
+        animation-duration: 2s;
+        display: inline;
 }
 
 @-webkit-keyframes post2{
@@ -280,7 +307,7 @@ h2 {
 .prev, .next{
     margin-top: 200px;
     font-size: larger;
-    color: #2c3e50;
+    color: red;
     
 }
 
@@ -288,23 +315,80 @@ h2 {
     margin-top: 30px;
 }
 }
+@media screen and (max-width: 600px){
+    *{
+        max-width: 100%;
+    }
 
-@media screen and (max-width: 680px){
-    .myslider img{
+    .big-image{
+        margin-top: 0;
+    }
+    h2 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 40%;
+        margin-top: 100px;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: post2;
+        -webkit-animation-duration: 2s;
+        animation-name: post2;
+        animation-duration: 2s;
+        display: inline;
+    }
+    
+    @-webkit-keyframes post2{
+        from {top: 35%;}
+        to {top: 50%;}
+    }
+    @keyframes post2{
+        from {top: 35%;}
+        to {top: 50%;}
+    }
+    .txt .btn{
+        display: inline;
+    }
+    .prev, .next{
+        margin-top: 200px;
+        font-size: larger;
+        color: red;
+        
+    }
+    
+    .mt{
+        margin-top: 30px;
+    }
+    }
+    
+/* @media screen and (max-width: 680px){
+    .slider{
         width: 100%;
         overflow: hidden;
     }
 
-}
+} */
 
 /* @media screen and (max-width:678px){
     .txt h1{
         font-size: 30px;
     }
 } */
-@media screen and (max-width:520px){
-    .txt h1{
+@media screen and (max-width:540px){
+    .txt .btn{
+        margin-top: 100px;
+        display: block;
+    } 
+    .txt h1, h2{
         font-size: 30px;
+        margin-top: 220px;
+    }
+
+    .big-image{
+        margin-top: 0;
     }
 }
 
