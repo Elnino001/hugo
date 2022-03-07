@@ -145,14 +145,16 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
-            <input type="text" class="form-control mt-4" placeholder="First name">
+            <form action="https://formsubmit.co/hbrisadvisory@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="text" class="form-control mt-4" placeholder=" Enter Full name" name="name">
             <div class="form-group">
-                <input type="email" class="form-control mt-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" name="email" class="form-control mt-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
-            <input type="text" class="form-control mt-4" placeholder="Phone">
-            <textarea class="form-control mt-4" id="exampleFormControlTextarea3" rows="7"></textarea>
-            <button type="submit" class="btn btn-primary mt-4" style="background: #CE1B28;">Submit</button>
+            <input type="text" class="form-control mt-4" placeholder="Phone" id="phone" name="phone">
+            <textarea class="form-control mt-4" id="exampleFormControlTextarea3" rows="7" name="message"></textarea>
+            <button type="submit" class="btn btn-primary mt-4" style="background: #CE1B28;">Submit</button></form>
             <br>
         </div>
         <div class="col-12 col-md-6 col-lg-6 mt-4">
