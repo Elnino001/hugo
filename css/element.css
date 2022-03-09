@@ -362,6 +362,10 @@ a.btn-second:hover{
     .mt{
         margin-top: 30px;
     }
+
+    .smaill{
+        margin-top: 0;
+    }
     }
     
 /* @media screen and (max-width: 680px){
@@ -384,10 +388,13 @@ a.btn-second:hover{
     } 
     .txt h1, h2{
         font-size: 30px;
-        margin-top: 220px;
+        /* margin-top: 220px; */
     }
 
     .big-image{
+        margin-top: 0;
+    }
+    .smaill{
         margin-top: 0;
     }
 }
